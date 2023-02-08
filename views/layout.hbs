@@ -14,15 +14,19 @@
     <title>{{title}}</title>
 </head>
 <body>
-
     <nav class="navbar">
         <a href="/">Home</a>
-        <a href="/behindTheMask">Behind the Mask</a>
+        <a href="/theManBehind">The Man Behind</a>
         <a href="/achievement">Achievement</a>
     </nav>
 
+    <section id="section-image">
+        {{#each image}}
+        <img src="{{this}}.jpeg" alt="Portrait">
+        {{/each}}
 
-    {{{body}}}
+        {{{body}}}
+    </section>
 
 </body>
 </html>

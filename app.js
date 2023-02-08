@@ -9,6 +9,7 @@ const app = express()
 app.set('view engine', 'hbs')
 
 
+
 app.use(express.static(__dirname + '/public'))
 //console.log(__dirname) aaaah i think i got it ! So we are saying to the pc that the static file are the file in public ?
 
@@ -17,21 +18,24 @@ app.use(express.static(__dirname + '/public'))
 app.get('/', (req, res) => {
     res.render('home', {
         title: 'Coluche',
-        css: ['home']
+        css: ['home', 'main'],
+        image: ['home']
     })
 })
 
-app.get('/behindTheMask', (req, res) => {
-    res.render('behindTheMask', {
+app.get('/theManBehind', (req, res) => {
+    res.render('theManBehind', {
         title: 'The Real OG',
-        css: ['behindTheMask']
+        css: ['the-man-behind', 'main'],
+        image: ['the-man-behind']
     })
 })
 
 app.get('/achievement', (req, res) => {
     res.render('achievement', {
         title: 'achievement',
-        css: ['achievement']
+        css: ['achievement', 'main'],
+        image: ['achievement']
     })
 })
 
