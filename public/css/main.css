@@ -14,11 +14,6 @@
     /* background-color: rgb(175, 106, 99); */
 }
 
-.navbar > a {
-    text-decoration: none;
-    color: white;
-}
-
 #section-image {
     display: flex;
     justify-content: space-evenly;

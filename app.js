@@ -1,7 +1,7 @@
 // Accessing the express function
 const express = require('express')
 
-// what mean get the app object (like saying in the course) ??
+//create my app
 const app = express()
 
 
